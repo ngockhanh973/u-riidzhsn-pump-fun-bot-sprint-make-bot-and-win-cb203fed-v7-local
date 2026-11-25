@@ -64,10 +64,12 @@ by the time cap.
 Measured with the kit's local replay port on the dev window (two identical
 runs, deterministic):
 
-- net PnL: _TBD_ SOL, fills _TBD_, coins _TBD_, round trips _TBD_, wins _TBD_,
-  max drawdown _TBD_, rejected _TBD_, failed _TBD_
-- without failed txs: _TBD_ SOL; at 2x fees: _TBD_ SOL
-- Baseline to beat (v6, submitted): net −0.041989 SOL
+- net PnL: −0.042275 SOL, fills 111, coins 31, round trips 55, wins 6,
+  max drawdown 0.0047, rejected 0, failed 2 (two identical runs)
+- without failed txs: −0.041880 SOL; at 2x fees: −0.087473 SOL
+- Baseline to beat (v6, submitted): net −0.041989 SOL — v7 is 0.000286 SOL
+  *below* v6 on the dev window, i.e. effectively tied; it does not beat the
+  baseline. Guardrails pass (31 ≥ 20 coins, dd 0.0047 ≤ 0.50).
 
 ## Run it
 
